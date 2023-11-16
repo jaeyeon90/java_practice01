@@ -31,3 +31,24 @@ main() {
    
    length(r) => 원 둘레 리턴
    area(r) => 원 면적 리턴
+
+
+public class Circle {
+   static double length(double r) {
+      return 2 * Math.PI * r;
+   }
+
+   static double area(double r) {
+      return Math.PI * r * r;
+   }
+
+   public static void main(String[] args) {
+      double r = 10.5;
+      double a = length(r);
+      double b = area(r);
+      System.out.println(String.format("%.2f", a));
+      System.out.println(String.format("%.2f", b));
+   }
+}
+
+
