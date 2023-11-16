@@ -1,34 +1,51 @@
-2.3. Call.java
 package ch06;
 
-public class Call {
+public class MultiTable {
 
-    static void test1(int b) {
+    static void table(int n) {
 
-        System.out.println(b);
+        System.out.println("=== Table " + n + " ===");
 
-    }
+        for (int i = 1; i <= 9; i++) {
 
-    static void test2(int[] n) {
-
-        for (int i = 0; i < n.length; i++) {
-
-            System.out.print(n[i] + "\t");
+            System.out.println(n + "x" + i + "=" + (n * i));
 
         }
 
     }
 
-    public static void main(String[] args) {
+    static void allTable() {
 
-        int a = 10;
+        for (int i = 2; i <= 9; i++) {
 
-        test1(a);
+            System.out.println("=== Table " + i + " ===");
 
-        int[] nums = { 10, 20, 30, 40, 50 };
+            for (int j = 1; j <= 9; j++) {
 
-        test2(nums);
+                System.out.println(i + "x" + j + "=" + i * j);
+
+            }
+
+        }
 
     }
+
+    public static void main(String[] args) {
+
+        table(3);
+
+        table(5);
+
+        for (int i = 2; i <= 9; i++) {
+
+            table(i);
+
+        }
+
+        
+
+        allTable();
+
+    }
 
 }
