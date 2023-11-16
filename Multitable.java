@@ -1,6 +1,7 @@
-public class MultiTable {
+package method;
 
-    static void table(int n) {
+public class MultiTable1 {
+	static void table(int n) {
 
         System.out.println("=== Table " + n + " ===");
 
@@ -28,22 +29,23 @@ public class MultiTable {
 
     }
     
-    public static void main(String[] args) {
 
-        table(3);
+	public static void main(String[] args) {
 
-        table(5);
+    table(3);
 
-        for (int i = 2; i <= 9; i++) {
+    table(5);
 
-            table(i);
+    for (int i = 2; i <= 9; i++) {
 
-        }
-
-        
-
-        allTable();
+        table(i);
 
     }
+
+    
+
+    allTable();
+
+}
 
 }
